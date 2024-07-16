@@ -1,0 +1,21 @@
+@mixin flexCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin scssHover{
+    &:hover{
+        color: #000;
+    }
+    &::after{
+        content: 'Sass';
+        font-family: $fontCourier;
+        display: inline-block;
+        margin-left: .7rem;
+        font-weight: bold;
+    }
+}
+@mixin fontSize($fs) {
+    font-size: $fs;
+}

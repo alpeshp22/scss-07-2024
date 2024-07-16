@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+}
+
+.screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9FA;
+}
+.screen h1 {
+  font-size: 8rem;
+  color: #BF4080;
+}
+.screen h1:hover {
+  color: #000;
+}
+.screen h1::after {
+  content: "Sass";
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  margin-left: 0.7rem;
+  font-weight: bold;
+}
+.screen p {
+  font-size: 3rem;
+  color: #000000;
+}
+.screen p:hover {
+  color: #000;
+}
+.screen p::after {
+  content: "Sass";
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  margin-left: 0.7rem;
+  font-weight: bold;
+}
+.screen cite {
+  color: #000000;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  opacity: 0.5;
+}/*# sourceMappingURL=main.css.map */

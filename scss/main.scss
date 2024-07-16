@@ -1,0 +1,41 @@
+@import "var.scss";
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: $sansSerif;
+}
+
+// Nesting Example
+.screen {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    @include flexCenter;
+    background-color: $pageBg;
+
+    h1 {
+        font-size: 5rem + 3rem; // this is operetor
+        color: $primaryColor;
+        @include scssHover;
+    }
+    p {
+        @include fontSize(3rem);
+        color: $black;
+        @include scssHover;
+    }
+    cite {
+        color: $black;
+        @include fontSize(1.3rem);
+        margin-top: 1rem;
+        opacity: 0.5;
+    }
+
+}
